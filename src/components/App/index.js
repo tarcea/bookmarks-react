@@ -3,13 +3,14 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 //PAGES
 import Navigation from '../Navigation';
-import Landing from '../Landing';
-import SignUp from '../SignUp';
-import SignIn from '../SignIn';
-import PasswordForget from '../PasswordForget';
-import Home from '../Home';
-import Account from '../Account';
-import Admin from '../Admin';
+import LandingPage from '../Landing';
+import SignUpPage from '../SignUp';
+import SignInPage from '../SignIn';
+import PasswordForgetPage from '../PasswordForget';
+import HomePage from '../Home';
+import AccountPage from '../Account';
+import AdminPage from '../Admin';
+import TestComponent from '../TestComponent';
 
 import * as ROUTES from '../../constants/routes';
 
@@ -17,15 +18,16 @@ const App = () => (
     <Router>
       <div>
         <Navigation />
+        <TestComponent />
         <hr />
 
-        <Route exact path={ROUTES.LANDING} component={Landing} />
-        <Route path={ROUTES.SIGN_UP} component={SignUp} />
-        <Route path={ROUTES.SIGN_IN} component={SignIn} />
-        <Route path={ROUTES.PASSWORD_FORGET} component={PasswordForget} />
-        <Route path={ROUTES.HOME} component={Home} />
-        <Route path={ROUTES.ACCOUNT} component={Account} />
-        <Route path={ROUTES.ADMIN} component={Admin} />
+        <Route exact path={ROUTES.LANDING} component={LandingPage} />
+        <Route path={ROUTES.SIGN_UP} component={SignUpPage} />
+        <Route path={ROUTES.SIGN_IN} component={SignInPage} />
+        <Route path={ROUTES.PASSWORD_FORGET} component={PasswordForgetPage} />
+        <Route path={ROUTES.HOME} component={HomePage} />
+        <Route path={ROUTES.ACCOUNT} component={AccountPage} />
+        <Route path={ROUTES.ADMIN} component={AdminPage} />
       </div>
     </Router>
 );
