@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap');
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.header {
+  margin: 4px;
+  border: 1px solid;
+
+}
+
+.header li {
+  /*background: tomato;*/
+  list-style-type: none;
+  display: inline-block;
+  padding: 0px 20px;
+  margin: 16px;
+  flex: 1 100%;
+
+}
+
+a {
+  font-family: roboto;
+  text-decoration: none;
+  color: #4A4A4A;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+a:hover {
+  color: black;
+
+}
+
+.btn-ghost {
+  color: #4A4A4A;
+  border: 1px solid #4A4A4A;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.btn-ghost:hover {
+  opacity: 1;
+}
+
+.aside {
+  margin: 4px;
+  border: 1px solid;
+}
+.footer {
+  background: lightgreen;
+}
+
+.main {
+  text-align: left;
+  background: deepskyblue;
+}
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 0 0; }
+}
+
+@media all and (min-width: 800px) {
+  .main    { flex: 3 0px; }
+  .aside-1 { order: 1; }
+  .main    { order: 2; }
+  .aside-2 { order: 3; }
+  .footer  { order: 4; }
+}
+
+body {
+  padding: 2em;
+}

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import SignOutButton from '../SignOut';
 import * as ROUTES from '../../constants/routes';
 import { AuthUserContext } from '../Session';
+import '../css/styles.css';
 
 const Navigation = () => (
     <div>
@@ -27,9 +28,9 @@ const NavigationAuth = () => (
         <li>
           <Link to={ROUTES.ACCOUNT}>Account</Link>
         </li>
-        <li>
+     { /*  <li>
           <Link to={ROUTES.ADMIN}>Admin</Link>
-        </li>
+        </li> */}
         <li>
           <SignOutButton />
         </li>

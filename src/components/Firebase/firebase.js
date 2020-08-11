@@ -11,6 +11,17 @@ const config = {
   messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
 };
 
+// const config = {
+//     apiKey: "AIzaSyBvZCGnae_TIzphFvjCKZI9x6b2K0M622Q",
+//     authDomain: "bookmark-react.firebaseapp.com",
+//     databaseURL: "https://bookmark-react.firebaseio.com",
+//     projectId: "bookmark-react",
+//     storageBucket: "bookmark-react.appspot.com",
+//     messagingSenderId: "1076229454814",
+//     appId: "1:1076229454814:web:cc188a22e7b4a881e17b4f",
+//     measurementId: "G-VS2792XF70"
+//   };
+
 class Firebase {
   constructor() {
     app.initializeApp(config);
